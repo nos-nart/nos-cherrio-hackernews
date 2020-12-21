@@ -1,6 +1,6 @@
 # nos-cherrio-hackernews
 
-![demo](http://url/to/img.png)
+![demo](https://github.com/nos-nart/nos-cherrio-hackernews/blob/master/hackernew.png)
 
 `scraper.js`
 
