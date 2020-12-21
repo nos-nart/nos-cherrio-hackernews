@@ -1,0 +1,23 @@
+{
+  "name": "nos-cherrio-hackernews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nos-nart/nos-cherrio-hackernews.git",
+  "author": "nam hoang <nam.hoang@ntq-solution.com.vn>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "dependencies": {
+    "apicache": "^1.5.3",
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "morgan": "^1.10.0",
+    "request": "^2.88.2"
+  }
+}

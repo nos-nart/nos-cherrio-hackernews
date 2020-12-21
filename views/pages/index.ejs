@@ -1,0 +1,36 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ('../layout/head') %>
+</head>
+<body>
+
+<header>
+  <%- include ('../layout/header') %>
+</header>
+
+<main>
+  <div class="container m-auto mt-6">
+    <% news.forEach(function(n){ %>
+      <div class="flex flex-col">
+        <div class="flex flex-wrap items-center">
+          <span class="text-gray-500"><%= n.rank %>.</span>
+          <p><%= n.title %></p>
+          <a target="_blank" rel="noopener" href="<%= n.url %>" class="no-underline text-xs text-blue-500"><%= n.ref %></a>
+        </div>
+        <p class="text-xs text-gray-500 ml-6">
+          <%= n.points %> points by <%= n.username %> | <%= n.comments %> comments
+        </p>
+      </div>
+    <% }); %>
+  </div>
+</main>
+
+<footer>
+  <%- include ('../layout/footer') %>
+</footer>
+
+</body>
+</html>
